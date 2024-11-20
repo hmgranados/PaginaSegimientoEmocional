@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;500;700&display=swap');
+
+
+.record_mood, .modal_content, .textarea_field, h2, p, button {
+    font-family: 'Ysabeau';
+}
+.record_mood{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.welcome_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    overflow: hidden; 
+}
+
+h2 {
+    font-family: 'Ysabeau';
+    font-weight: 500; 
+}
+
+
+.welcome_image-img {
+    width: 100vw; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+/* Estilos para el título centrado */
+.record_mood-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para el contenedor de las imágenes */
+.mood_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenedor de imágenes */
+}
+
+/* Estilos para las imágenes de los estados de ánimo */
+.mood_image {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: 100px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el cuadro sin distorsión */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor cambia a pointer al hacer hover */
+    transition: transform 0.2s; /* Animación suave al hacer hover */
+}
+
+.mood_image:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+}
+
+/* Estilos para mostrar el estado de ánimo seleccionado */
+.selected_mood {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilos para el fondo oscuro detrás del modal */
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegurarse de que esté sobre todo */
+}
+
+/* Estilos para el contenido del modal */
+.modal_content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para el campo de párrafo */
+.textarea_field {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #A5DFFE;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    background-color: #E0F6FF; /* Azul claro para el fondo del textarea */
+    color: #333; /* Texto oscuro dentro del textarea */
+}
+
+
+.modal_buttons {
+    display: flex;
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.save_button, .cancel_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.save_button {
+    background-color: #FF64C1; 
+    color: white;
+}
+
+.cancel_button {
+    background-color: #89939E; 
+    color: white;
+}
+
+.save_button:hover, .cancel_button:hover {
+    opacity: 0.9;
+}

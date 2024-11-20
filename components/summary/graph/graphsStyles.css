@@ -1,0 +1,53 @@
+.container-graphs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.graphs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.titulo-graficas{
+    width: 60%;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Alfa Slab One", sans-serif;
+    color: #89939E;
+    text-align: center;
+}
+.graph-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grafica-sumary{
+    background-color: transparent;
+}
+
+.fecha-graficas{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Alfa Slab One", sans-serif;
+    color: #89939E;
+    text-align: center;
+}
+
+.emotions-repre{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.emotion-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.emotion-info p{
+    color: #89939E;
+}

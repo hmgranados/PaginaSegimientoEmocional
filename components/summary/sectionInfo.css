@@ -1,0 +1,13 @@
+.saludo, .notificar{
+    font-weight: bold;
+    color: #89939E;
+    font-family: "Ysabeau", sans-serif;
+    text-align: center;
+}
+
+.saludo{
+    font-size: 90px;
+}
+.notificar{
+    font-size: 70px;
+}

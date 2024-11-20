@@ -1,0 +1,30 @@
+header{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.nav{
+    height: 100%;
+    width: 100%;
+    box-shadow: rgb(243, 243, 243) 2px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.logo {
+    width: 180px; /* Aumenta este valor para hacer que el logo sea más grande */
+    height: auto;
+    vertical-align: middle;
+}

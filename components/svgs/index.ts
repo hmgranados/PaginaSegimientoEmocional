@@ -1,0 +1,1 @@
+export {default as IconHappySvg} from './IconHappySvg.tsx';

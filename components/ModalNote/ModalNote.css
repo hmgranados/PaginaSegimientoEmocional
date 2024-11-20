@@ -1,0 +1,121 @@
+/* Fondo del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo del modal */
+.modal-note {
+  width: 400px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.modal-title {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #ffb4c9; /* Color rosado */
+  border-top-left-radius: 8px; /* Redondeo superior izquierdo */
+  border-top-right-radius: 8px; /* Redondeo superior derecho */
+  border-bottom-left-radius: 0; /* Sin redondeo en la parte inferior izquierda */
+  border-bottom-right-radius: 0; /* Sin redondeo en la parte inferior derecha */
+  font-size: 16px;
+  margin-bottom: 0; /* Elimina el margen inferior */
+  outline: none;
+  font-weight: bold;
+}
+
+.modal-title::placeholder {
+  color: #ffffff; /* Color blanco para el texto del placeholder */
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+
+  border: 1px solid #ddd;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  resize: none;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5; /* Ajusta el espaciado entre líneas de texto */
+  color: black;
+  text-align: justify;
+  outline: none;
+
+  /* Fondo con líneas horizontales que coinciden con el texto */
+  background: repeating-linear-gradient(
+    to bottom,
+    /* Dirección hacia abajo */ transparent,
+    /* Color transparente antes de la línea */ transparent 1.4em,
+    /* Espacio entre líneas (ajustado a la altura de la línea de texto) */ #ddd
+      1.4em,
+    /* Color de la línea (gris) */ #ddd 1.5em
+      /* El grosor de la línea (ajustado) */
+  );
+  background-size: 100% 1.5em; /* Asegura que el tamaño de las líneas coincida con el espaciado */
+}
+
+/* Botones */
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  
+}
+
+
+.button-cancel {
+  background-color: #ffb4c9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+  transition: all ease 0.5s;
+}
+
+.button-save {
+  background-color: #ffb4c9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+  transition: all ease 0.5s;
+}
+
+.button-cancel:hover {
+  width: 100%;
+  color: black;
+}
+
+.button-save:hover {
+  width: 100%;
+  color: black;
+}
+
+.modal-note {
+  width: 40%;
+  height: 40vh;
+}
